@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://react-redux.realworld.io/#/",
+    "watchForFileChanges": false,
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "UrlAPI": "https://conduit.productionready.io/api/",
+    "user": {
+        "email": "grupoprimo@mail.com",
+        "password": "12345678"
+    }
+    
+}
