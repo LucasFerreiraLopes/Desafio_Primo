@@ -7,17 +7,18 @@ A aplicação utilizada para o desafio foi a https://react-redux.realworld.io/ ,
 
 Inicialmente realizei um teste exploratório na ferramenta, verificando suas funcionalidades e comportamentos, identifiquei suas regras de negócios e com isso tive massa de dados suficientes para começar a levantar os cenários de testes à serem automatizados.
 
----
 
 ## Entendendo os casos de Testes:
 #### Cadastro
 Como realizar um cadastro na aplicação seria um teste separado, identifiquei que precisaria usar alguma biblioteca ou plugin que gerasse dados randômicos para o cadastro, assim o teste nunca falharia por possuir dados hardcoded no teste. Pra isso eu optei por usar o plugin Faker.JS(https://www.npmjs.com/package/faker), que me possibilita gerar dados aleatórios como: Email, Nome, Senhas, etc...
 
+---
 #### Login
 Já para o teste de login, optei por utilizar uma conta fixa, que criei inicialmente durante o teste exploratório que fiz na ferramenta, e como boa prática deixei essa conta declarada em variáveis no arquivo cypress.json, evitando assim dados sensiveis expostos no meu código.
 
 Como eu segreguei o teste de login em um caso de testes separado, não seria ideal que repetisse o fluxo manual de login para os testes dentro da aplicação, pensando nisso optei por usar uma das funcionalidades que acho mais legal do Cypress, que é realizar o login em background, manipulando os dados das requisições da API e o local storage do navegador. Apesar de não ter muita prática com esse recurso, me desafiei a implementa-lo pois iria economizar tempo de teste. Para fazer essa chamada utilizei o conceito de "hooks" (beforeEach e afterEach).
 
+---
 #### Artigos
 Identifiquei que ao clicar no envio do artigo, a requisição "post" dele estava lenta, fiz uso do comando cy.intercept() para mapear essa requisição, e coloca-la no cy.wait() para que o teste conseguisse prosseguir com sucesso. 
 
