@@ -10,7 +10,7 @@ Inicialmente realizei um teste exploratório na ferramenta,  utilizando técnica
 
 ## Entendendo os casos de Testes:
 #### Cadastro
-Como realizar um cadastro na aplicação seria um teste separado, identifiquei que precisaria usar alguma biblioteca ou plugin que gerasse dados randômicos para o cadastro, assim o teste nunca falharia por possuir dados hardcoded no teste. Pra isso eu optei por usar o plugin Faker.JS(https://www.npmjs.com/package/faker), que me possibilita gerar dados aleatórios como: Email, Nome, Senhas, etc...
+Como realizar um cadastro na aplicação seria um teste separado, identifiquei que precisaria usar alguma biblioteca ou plugin que gerasse dados randômicos para o cadastro, assim o teste nunca falharia por possuir dados hardcoded no teste. Pra isso eu optei por usar o plugin Faker.JS, que me possibilita gerar dados aleatórios como: Email, Nome, Senhas, etc...
 
 ---
  #### Login
@@ -37,12 +37,12 @@ Chrome ✅
 
 ## Plugins utilizados no projeto:
 
-Faker.JS
+[Faker.JS](https://www.npmjs.com/package/faker)
 
 ## Conceitos utilizados:
 
 - [Hooks](https://www.toolsqa.com/cypress/cypress-hooks/ "Hooks")
-- [Arrange | Act | Assert (AAA).](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)
+- [Arrange/Act/Assert(AAA).](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)
 - [Page Objects](https://www.toolsqa.com/cypress/page-object-pattern-in-cypress/ "Page Objects")
 - [Background Login](https://docs.cypress.io/guides/references/best-practices "Background Login")
 - Random Data
