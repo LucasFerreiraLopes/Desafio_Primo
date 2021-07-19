@@ -7,5 +7,6 @@ context('Realizar o Login', () => {
        Login.visitarLogin()
        Login.preencherLogin() // nesse bloco utilizei conceitos de AAA ( Arrange Act Assert) e coloquei os steps dentro de funções, que ficaram na pasta support/pages/login
        Login.realizarLogin()
+       Login.verificarLogin()
     });
 });

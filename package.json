@@ -1,9 +1,10 @@
 {
+  "name": "Desafio-Primo",
+  "version": "1.0.0",
+  "description": "Projeto criado para o desafio Grupo Primo",
+  
   "devDependencies": {
     "cypress": "^7.7.0",
     "faker": "^5.5.3"
-  },
-  "dependencies": {
-    "chai": "^4.3.4"
   }
 }

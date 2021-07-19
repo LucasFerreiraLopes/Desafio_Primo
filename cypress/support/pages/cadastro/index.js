@@ -14,7 +14,13 @@ class Cadastro {
     }
 
     realizarCadastro(){
-        cy.get('button.btn-primary').click()
+        cy.get(elementos.buttonSubmit).click()
+    }
+
+    verificarCadastro(){
+        cy.wait('@CadastroPOST').its('response.statusCode').should('eq', 200)
+        cy.wait('@FeedGET').its('response.statusCode').should('eq', 200)
+        cy.wait('@TagsGET').its('response.statusCode').should('eq', 200)
     }
 }
 

@@ -7,6 +7,7 @@ context('Realizar o Cadastro', () => {
     it('Visitar a página de registro e realizar um cadastro', () => {
         Cadastro.visitarCadastro()
         Cadastro.preencherCadastro()
-        Cadastro.realizarCadastro()
+        Cadastro.realizarCadastro() // //nesse bloco utilizei o conceito de AAA ( Arrange Act Assert) e coloquei os steps dentro de funções, que ficaram na pasta support/pages/cadastro
+        Cadastro.verificarCadastro()
     });
 });

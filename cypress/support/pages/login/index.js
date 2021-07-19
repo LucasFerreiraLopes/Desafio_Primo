@@ -15,6 +15,12 @@ class Login {
     realizarLogin() {
         cy.get(elementos.buttonSubmit).click()
     }
+
+    verificarLogin(){
+        cy.wait('@LoginPOST').its('response.statusCode').should('eq', 200)
+        cy.wait('@FeedGET').its('response.statusCode').should('eq', 200)
+        cy.wait('@TagsGET').its('response.statusCode').should('eq', 200)
+    }
 }
 
 export default new Login();
