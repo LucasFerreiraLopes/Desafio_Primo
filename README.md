@@ -42,7 +42,7 @@ Faker.JS
 ## Conceitos utilizados:
 
 - [Hooks](https://www.toolsqa.com/cypress/cypress-hooks/ "Hooks")
-- [Arrange | Act | Assert (AAA)](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/ pattern-for-writing-good-tests/  "Arrange | Act | Assert (AAA)")
+- [Arrange | Act | Assert (AAA).](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)
 - [Page Objects](https://www.toolsqa.com/cypress/page-object-pattern-in-cypress/ "Page Objects")
 - [Background Login](https://docs.cypress.io/guides/references/best-practices "Background Login")
 - Random Data
