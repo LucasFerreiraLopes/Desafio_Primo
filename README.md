@@ -7,7 +7,7 @@ A aplicação utilizada para o desafio foi a https://react-redux.realworld.io/ ,
 
 Inicialmente realizei um teste exploratório na ferramenta,  utilizando técnica funcional como caixa preta para verificar suas funcionalidades e comportamentos, identifiquei suas regras de negócios e com isso tive massa de dados suficientes para começar a levantar os cenários de testes à serem automatizados.
 
-
+---
 ## Entendendo os casos de Testes:
 #### Cadastro
 Como realizar um cadastro na aplicação seria um teste separado, identifiquei que precisaria usar alguma biblioteca ou plugin que gerasse dados randômicos para o cadastro, assim o teste nunca falharia por possuir dados hardcoded no teste. Pra isso eu optei por usar o plugin Faker.JS, que me possibilita gerar dados aleatórios como: Email, Nome, Senhas, etc...
@@ -31,6 +31,10 @@ Como boa prática, realizei os passos acima para
 ## Mapeamento de Rotas
 Realizei o mapeamento das rotas da API que são geradas quando enviamos um artigo na aplicação, e fiz testes de asserção para essas rotas. Coloquei no Index.js raiz do projeto para iniciar o mapeamento das rotas antes dos testes.
 
+## Integração Continua
+Para verificar se os testes estariam adaptados à um processo de integração continua, implementei o projeto ao GitHub Actions e implementei um evento Cron para rodar à cada 1 hora, é uma boa forma de verificar se o testes precisam de alguma manutenção e se a aplicação continua com os fluxos funcionais.
+
+
 ## Qual navegador  os testes foram realizados?
 
 Chrome ✅
@@ -46,6 +50,8 @@ Chrome ✅
 - [Page Objects](https://www.toolsqa.com/cypress/page-object-pattern-in-cypress/ "Page Objects")
 - [Background Login](https://docs.cypress.io/guides/references/best-practices "Background Login")
 - Random Data
+- [CI Github Actions](https://docs.github.com/en/actions/guides/about-continuous-integration "CI Github Actions")
+- [CRON Jobs](https://www.hivelocity.net/kb/what-is-cron-job/ "CRON Jobs")
 ## Comandos para instalar e rodar o projeto:
 
 ``npm Install``
