@@ -2,7 +2,7 @@ Feature: Aplicação Conduit
 
     Aplicação consiste em ser uma rede social para publicação e interação de artigos
     Semelhante ao funcionamento do twitter, com uma funcionalidade de linha do tempo,
-    aonde podemos visualizar todos os artigos postados pelos usuários.
+    aonde podemos visualizar todos os artigos postados pelos usuários.  
 
 
     Scenario: Acessar a aplicação e visualizar o feed global
@@ -34,6 +34,11 @@ Feature: Aplicação Conduit
     And preencher os campos com os dados da minha conta
     Then estarei logado no sistema com a minha conta informada
 
+    Scenario: Deslogar minha conta do site
+    Given que estou logado no sistema e quero deslogar
+    When eu acessar configurações e clicar em logout
+    Then eu serei desconectado e direcionado a pagina principal
+
     Scenario: Publicar um artigo sem preencher todos os campos 
     Given que desejo publicar um artigo apenas com titulo
     When eu não preencher todos os dados do artigo
@@ -52,3 +57,27 @@ Feature: Aplicação Conduit
     When eu estiver no feed global e clicar em um artigo de meu interesse
     And estiver dentro da linha do tempo da pessoa que publicou o artigo
     Then devo conseguir interagir comentando ou curtindo qualquer artigo dessa pessoa
+
+    Scenario: Verificar se o artigo foi curtido
+    Given que eu curti o artigo de algum usuario
+    When eu entrar no meu menu de artigos favoritos
+    Then eu verei o artigo recém curtido no menu
+
+    Scenario: Editar meu perfil
+    Given que eu desejo alterar alguma informação no meu perfil
+    When eu entrar no meu perfil para edição
+    And adicionar uma foto ou biografia
+    Then devo conseguir salvar com as novas informações adicionadas
+
+    Scenario: Visualizar artigos por tag
+    Given que desejo visualizar artigos por uma tag
+    When eu clicar em uma tag no feed global
+    Then verei apenas artigos publicados com aquela tag
+
+
+    Scenario: Visualizar outra página de artigos
+    Given que estou no feed global de artigos e quero ver outra página
+    When eu clicar em um número no fim da página
+    Then devo visualizar a página de artigos respectiva àquele número
+    
+
