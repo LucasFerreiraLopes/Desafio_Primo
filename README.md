@@ -29,7 +29,8 @@ Transformando os steps dos teste em funções na pasta suppor/pages, também ide
 Como boa prática, realizei os passos acima para
 
 ## Mapeamento de Rotas
-Realizei o mapeamento das rotas da API que são geradas quando enviamos um artigo na aplicação, e fiz testes de asserção para essas rotas. Coloquei no Index.js raiz do projeto para iniciar o mapeamento das rotas antes dos testes.
+Realizei o mapeamento das rotas da API que são geradas quando enviamos um artigo na aplicação, e fiz testes de asserção para essas rotas.
+As rotas estão mapeadas no arquivo Routes.js, e coloquei no Index.js raiz do projeto um hook para iniciar o mapeamento das rotas antes dos testes.
 
 ## Integração Continua
 Para verificar se os testes estariam adaptados à um processo de integração continua, implementei o projeto ao GitHub Actions e implementei um evento Cron para rodar à cada 1 hora, é uma boa forma de verificar se o testes precisam de alguma manutenção e se a aplicação continua com os fluxos funcionais.
