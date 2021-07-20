@@ -3,6 +3,12 @@
 A aplicação utilizada para o desafio foi a https://react-redux.realworld.io/ , uma rede social com funcionamento semelhante ao "Twitter", onde o usuário faz um cadastro, e estando logado pode realizar publicações que ficam em uma linha de tempo global.
 
 ---
+## Evidência do Projeto:
+Para gravar um vídeo como evidência do bom funcionamento dos testes, bem como suas asserções,  utilizei a ferramenta Loom.
+
+Para verificar o vídeo de evidência [clique aqui](https://www.loom.com/share/d1f6783891a4441080e4969a7fbae201 "clique aqui")
+
+---
 ## Levantamento de Casos de Testes
 
 Inicialmente realizei um teste exploratório na ferramenta,  utilizando técnica funcional como caixa preta para verificar suas funcionalidades e comportamentos, identifiquei suas regras de negócios e com isso tive massa de dados suficientes para começar a levantar os cenários de testes à serem automatizados.
