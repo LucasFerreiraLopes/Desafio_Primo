@@ -15,7 +15,6 @@ Feature: Aplicação Conduit
     When eu me cadastrar sem preencher todos os campos
     Then o sistema mostra uma mensagem de erro por faltar preencher os campos
 
-
     Scenario: Realizar Cadastro no site
     Given que não possuo um cadastro
     When eu estiver na pagina de cadastro
@@ -44,13 +43,11 @@ Feature: Aplicação Conduit
     When eu não preencher todos os dados do artigo
     Then o sistema deve me mostrar uma mensagem de erro pedindo para preencher os campos
 
-
     Scenario: Publicar um Artigo completo
     Given que desejo publicar um artigo
     When  eu estiver na página de criar artigo
     And preencher o artigo com as informações necessárias
     Then devo publicar e visualizar o artigo que acabei de escrever
-
 
     Scenario: Interagir com artigos
     Given que desejo interagir com o artigo de alguém
@@ -74,10 +71,20 @@ Feature: Aplicação Conduit
     When eu clicar em uma tag no feed global
     Then verei apenas artigos publicados com aquela tag
 
-
     Scenario: Visualizar outra página de artigos
     Given que estou no feed global de artigos e quero ver outra página
     When eu clicar em um número no fim da página
     Then devo visualizar a página de artigos respectiva àquele número
-    
+
+    Scenario: Visualizar artigos mesmo deslogado
+    Given Não possuo conta no sistema mas desejo ver artigos
+    When eu acessar o menu principal e clicar em um artigo
+    Then devo poder visualizar todo o conteúdo do artigo mas não poder interagir
+
+    Scenario: Deletar um artigo criado
+    Given Publiquei um artigo mas desejo deleta-lo
+    When eu acessar a página do meu artigo
+    Then devo poder clicar no botão excluir e apagar o artigo
+
+
 

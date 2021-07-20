@@ -18,5 +18,10 @@ class Articles {
         cy.wait('@ArtigoTitleGET').its('response.statusCode').should('eq', 200)
         cy.wait('@ArtigoCommentsGET').its('response.statusCode').should('eq', 200)
     }
+
+    visualizarArtigos(){
+        cy.get(elementos.buttonGlobalFeed).click()
+        cy.get(elementos.buttonArticle).click()
+    }
 }
 export default new Articles();

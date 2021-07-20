@@ -14,4 +14,8 @@ context('Realizar o Login', () => {
     it('Realizar logout do sistema', () => {
         Logout.realizarLogout()
     });
+
+    it('Verificar mensagem de erro no login', () => {
+        Login.falhaLogin()
+    });
 });

@@ -21,6 +21,16 @@ class Login {
         cy.wait('@FeedGET').its('response.statusCode').should('eq', 200)
         cy.wait('@TagsGET').its('response.statusCode').should('eq', 200)
     }
+
+
+    falhaLogin(){
+        cy.visit('login')
+        cy.get(elementos.inputEmail).type(Cypress.config().user.email)
+        cy.get(elementos.buttonSubmit).click()
+        cy.get(elementos.errorMessages).should('be.visible')
+        .and('contain', 'email or password is invalid')
+
+    }
 }
 
 export default new Login();
