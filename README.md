@@ -6,7 +6,7 @@ A aplicação utilizada para o desafio foi a https://react-redux.realworld.io/ ,
 ## Evidência do Projeto:
 Para gravar um vídeo como evidência do bom funcionamento dos testes, bem como suas asserções,  utilizei a ferramenta Loom.
 
-Para verificar o vídeo de evidência [clique aqui](https://www.loom.com/share/d1f6783891a4441080e4969a7fbae201 "clique aqui")
+Para verificar o vídeo de evidência [clique aqui](https://www.loom.com/share/55ad5d861d934745a635bac67ac72261 "clique aqui")
 
 ---
 ## Levantamento de Casos de Testes
