@@ -15,4 +15,11 @@ context('Publicação de Artigo', () => {
         artigos.enviarArtigo()
         artigos.verificarPublicacaoArtigo()
     });
+
+    it('Criar artigo e apagar', () => {
+        artigos.preencherArtigo() 
+        artigos.enviarArtigo()
+        artigos.verificarPublicacaoArtigo()
+        artigos.deletarArtigo()
+    });
 });

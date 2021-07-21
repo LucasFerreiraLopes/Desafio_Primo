@@ -5,5 +5,6 @@ export const ELEMENTSARTIGO = {
     inputTags: 'input[placeholder*=Enter]',
     buttonSubmit: 'button.btn-primary',
     buttonGlobalFeed: '.feed-toggle > .nav > :nth-child(2) > .nav-link',
-    buttonArticle: ':nth-child(1) > .preview-link > h1'
+    buttonArticle: ':nth-child(1) > .preview-link > h1',
+    buttonDelete: 'button.btn-sm'
 }

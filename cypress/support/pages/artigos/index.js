@@ -23,5 +23,9 @@ class Articles {
         cy.get(elementos.buttonGlobalFeed).click()
         cy.get(elementos.buttonArticle).click()
     }
+
+    deletarArtigo(){
+        cy.get(elementos.buttonDelete).click({multiple:true})
+    }
 }
 export default new Articles();
